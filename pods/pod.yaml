@@ -1,0 +1,10 @@
+apiVersion: v1 # Spécifie la version de l'API Kubernetes utilisée (v1 pour les objets de base).
+kind: Pod # Déclare que ce manifeste concerne un objet de type "Pod".
+
+metadata: # Contient des métadonnées associées au pod, telles que le nom.
+  name: nginx # Définit le nom du pod.
+
+spec: # Contient la spécification détaillée du pod.
+  containers: # Liste les conteneurs à exécuter dans le pod.
+  - name: nginx # Nom du conteneur.
+    image: nginx # Image Docker à utiliser, provenant de DockerHub.

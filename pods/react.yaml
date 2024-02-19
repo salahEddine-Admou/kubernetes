@@ -1,0 +1,15 @@
+# Spécifie la version de l'API Kubernetes utilisée (v1 pour les objets de base).
+apiVersion: v1
+# Déclare que ce manifeste concerne un objet de type "Pod".
+kind: Pod
+# Contient des métadonnées associées au pod, telles que le nom.
+metadata:
+  name: react # Définit le nom du pod.
+# Contient la spécification détaillée du pod.
+spec:
+  # Liste les conteneurs à exécuter dans le pod.
+  containers:
+  - name: react # Nom du conteneur.
+    image: salah9999/test:latest # Image Docker à utiliser, provenant de DockerHub.
+    ports:
+    - containerPort: 3000 # Port sur lequel l'application dans le conteneur écoute.
